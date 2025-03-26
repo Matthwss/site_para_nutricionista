@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calorias</title>
+</head>
+<body>
+    <h1 id="h1">calorias</h1>
+    <h2>Conte sua calorias</h2>
+    <p>Data <input type="date" autocomplete="off" name="text" class="input" placeholder="Username"></p>
+    <p>alimeto <input type="text" list="comidas" autocomplete="off" name="text" class="input" placeholder="Username"></p>
+    <datalist id="comidas">
+        <option value="pão">pão<option>
+        <option value="queijo mussarela">queijo mussarela</option>
+        <option value="leite">leite</option>
+        <option value="pera">pera</option>
+        <option value="bolo de chocolate">bolo de chocolate</option>
+        <option value="maçã">maçã</option>
+        <option value="banana">banana</option>
+        <option value="manga">manga</option>
+        <option value="morango">morango</option>
+        <option value="doce de leite">doce de leite</option>
+    </datalist>
+    <p>quantidade em gramas <input type="number" autocomplete="off" name="text" class="input" placeholder="Username"></p>
+
+    <p><button  id="up" onclick="calcular()">Calcular</button></p>
+    <p>calorias consumidas:</p>
+    <p id="quantia"></p>
+    <p><button id="up" onclick="registrar()">registrar</button></p>
+    <p>calorias Totais:</p>
+    <p id="total"></p>
+    
+    <script src="calorias.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    background-color: rgba(0, 102, 255, 0.11);
+}
+
+h1 {
+    color: rgb(44, 86, 0);
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#h1 {
+    color: rgb(44, 86, 0);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#topo1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: center;
+    width: 15%;
+    margin-right: 2%;
+    height: 30px;
+    background-color: rgb(144, 255, 130);
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 20px;
+}
+
+#baixo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: center;
+    width: 30%;
+    margin-right: 2%;
+    height: 30px;
+    background-color: rgb(144, 255, 130);
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    color: rgb(44, 86, 0);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2 {
+    color: rgb(44, 86, 0);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
+}
+
+#up {
+    --color: #0077ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 20px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+}
+
+#up::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 170px;
+    height: 150px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#up:hover {
+    color: white;
+}
+
+#up:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+}
+#up:hover::before {
+    top: -30px;
+    left: -30px;
+}
