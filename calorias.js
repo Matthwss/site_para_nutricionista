@@ -8,6 +8,20 @@ var banana = 89
 var manga = 60
 var morango = 33
 var docedeleite = 315
+var frango = 0
+var peixe = 0
+var beterraba = 0
+var cenoura = 0
+var Carnedeboi = 0
+var batata = 0
+var arroz = 0
+var feijao = 0
+var macarrao = 0
+var alface = 0
+var sucodeuva = 0
+var sucodelaranja = 0
+var cafe = 0
+var brocolis = 0
 var qnt = document.getElementById('quantia')
 var total = document.getElementById('total')
 function calcular() {
@@ -35,6 +49,34 @@ function calcular() {
         qnt.innerHTML = morango * quantidade
     } else if (alimento == 'doce de leite') {
         qnt.innerHTML = docedeleite * quantidade
+    } else if (alimento == 'frango') {
+        qnt.innerHTML = frango * quantidade
+    } else if (alimento == 'peixe') {
+        qnt.innerHTML = peixe * quantidade
+    } else if (alimento == 'beterraba') {
+        qnt.innerHTML = beterraba * quantidade
+    } else if (alimento == 'cenoura') {
+        qnt.innerHTML = cenoura * quantidade
+    } else if (alimento == 'carne de boi') {
+        qnt.innerHTML = Carnedeboi * quantidade
+    } else if (alimento == 'batata') {
+        qnt.innerHTML == batata * quantidade
+    } else if (alimento == 'arroz') {
+        qnt.innerHTML = arroz * quantidade
+    } else if (alimento == 'feijão') {
+        qnt.innerHTML = feijao * quantidade
+    } else if (alimento == 'macarrão') {
+        qnt.innerHTML = macarrao * quantidade
+    } else if (alimento == 'alface') {
+        qnt.innerHTML = alface * quantidade
+    } else if (alimento == 'suco de uva') {
+        qnt.innerHTML = sucodeuva * quantidade
+    } else if (alimento == 'suco de laranja') {
+        qnt.innerHTML = sucodelaranja * quantidade
+    } else if (alimento == 'café') {
+        qnt.innerHTML = cafe * quantidade
+    } else if (alimento == 'brócolis') {
+        qnt.innerHTML = brocolis * quantidade
     }
     qnt.innerHTML = parseFloat(qnt.innerHTML).toFixed(2).replace('.', ',')
 }
