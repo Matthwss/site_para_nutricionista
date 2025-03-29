@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20220819/ourmid/pngtree-wheat-logo-template-vector-symbol-nutrition-agriculture-sign-vector-png-image_38482436.png" type="image/x-icon">
     <title>home</title>
 </head>
 <style>
     h1 {
         text-align: center;
+        margin-top: 20px;
+    }
+    #topo {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Espaçamento entre os botões */
+        margin-top: 20px;
+    }
+    #baixo1 {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Espaçamento entre os botões */
+        margin-top: 20px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
     }
 </style>
 <body>
-    <h1>macro nutrientes</h1>
-    <div id="topo">
+    <h1>Macro Nutrientes</h1>
+    <div  id="topo">
         <a href=""><button id="up">Instagram</button></a>
         <a href=""><button id="up">whatsapp</button></a>
         <a href=""><button id="up">suporte</button></a>
@@ -26,5 +46,6 @@
         <a href="agua.html"><button id="" class="button type1" onclick="ag()"><span class="btn-txt">Água</span></button></a>
         <a href="resgistros.html"><button id="" class="button type1" onclick=""><span class="btn-txt">Registros</span></button></a>
     </div>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>

@@ -77,6 +77,8 @@ function calcular() {
         qnt.innerHTML = cafe * quantidade
     } else if (alimento == 'brócolis') {
         qnt.innerHTML = brocolis * quantidade
+    } else {
+        qnt.innerHTML = 0
     }
     qnt.innerHTML = parseFloat(qnt.innerHTML).toFixed(2).replace('.', ',')
 }
