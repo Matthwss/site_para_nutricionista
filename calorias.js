@@ -7,6 +7,9 @@ function calcular() {
 var data = document.querySelector('input[type="date"]').value
 var alimento = document.querySelector('input[type="text"]').value
 var quantidade = parseFloat(document.querySelector('input[type="number"]').value);
+if (data > new Date()) {
+    window.alert('coloque uma data valiada')
+}
 
 if (!alimento || isNaN(quantidade) || quantidade <= 0) {
     qnt.innerHTML = "Entrada inválida";
@@ -21,7 +24,10 @@ if (index !== -1) {
 } else {
     qnt.innerHTML = "Alimento não encontrado";
 }
-    qnt.innerHTML = parseFloat(qnt.innerHTML).toFixed(2).replace('.', ',')
+    qnt.innerHTML = parseFloat(qnt.innerHTML).toFixed(2).replace('.', ',');
+    data.value = ''
+    alimento.value = ''
+    quantidade.value = ''
 }
 function registrar() {
     var totalAtual = parseFloat(total.innerHTML.replace(',', '.'))
