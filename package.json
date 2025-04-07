@@ -1,0 +1,24 @@
+{
+  "name": "site_para_nutricionista",
+  "version": "1.0.0",
+  "main": "agua.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthwss/siteparanutricionista.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matthwss/siteparanutricionista/issues"
+  },
+  "homepage": "https://github.com/Matthwss/siteparanutricionista#readme",
+  "description": "",
+  "dependencies": {
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
